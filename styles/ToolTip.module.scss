@@ -1,0 +1,24 @@
+.tooltip {
+  z-index: 1;
+  position: absolute;
+  background-color:hsl(0, 0%, 98%);  
+  padding: 20px;
+  top: 65px;
+  display: none;
+  box-shadow: 10px;
+  border-radius: 12px;
+}
+
+.isOpen {
+  display: block
+}
+
+.isClone {
+  display: none
+}
+
+@media (max-width: 600px) {
+  .tooltip {
+    display: none;
+  }
+}

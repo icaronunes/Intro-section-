@@ -1,0 +1,103 @@
+.div {
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 6px 10px;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  visibility: visible;
+  align-items: center;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+
+  h6 {
+    margin-right: 4px;
+  }
+}
+
+.menu:hover {
+  + div {
+    display: block;
+  }
+}
+
+.features {
+  margin-left: 30px;
+}
+
+.login {
+  border: none;
+  background-color: transparent;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(0, 0%, 41%);
+}
+
+.register {
+  background-color: transparent;
+  border-radius: 14px;
+  border-color: hsl(0, 0%, 41%);
+  padding: 8px;
+  align-self: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(0, 0%, 41%);
+}
+
+.login:hover {
+  color: hsl(0, 0%, 80%);
+}
+
+.register:hover {
+  color: hsl(0, 0%, 80%);
+  border-color: hsl(0, 0%, 80%);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 600px) {
+  .span {
+    position: static;
+    background-color: red;
+  }
+
+  .div {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
